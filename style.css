@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#cardContainer {
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+#addBookButton {
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.buttonWrapper {
+    text-align: center;
+    align-items: center;
+}
+h1 {
+    margin-top: 30px;
+    text-align: center;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 36px;
+}
+h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.read {
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.pages {
+    font-style: italic;
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+}
+.delete {
+    background-color: #e18282;
+    color: white;
+}
+.status {
+    background-color: #7d6148;
+    color: white
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0e3d8;
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.cardTop {
+    display: flex;
+    justify-content: space-between;
+}
+.cardBottom {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    text-align: center;
+}
+.author {
+    text-align: center;
+}
+#bookForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+
+}
+.modal.show {
+    display: flex;
+}
+.modalContent {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 20px solid #ab8f75;
+    
+}
+#closeModal {
+    font-size: 20px;
+    display: block;
+    text-align: right;
+}
+form > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+form > div > label {
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+input {
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+}
+input:focus {
+    outline: none;
+    background-color: #efefef;
+}
+#statusQuestion {
+    display: flex;
+    justify-content: space-between;
+}

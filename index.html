@@ -8,22 +8,52 @@
 </head>
 <body>
     <h1>My Library</h1>
-    <button id="addBookButton">+</button>
-    <div class="cardContainer">
-        <div class="card">
-            <div class="cardTop">
-                <div class="read">Read</div>
-                <p class="pages">320</p>
-            </div>
-            <div class="cardMiddle">
-                <h2 class="title">Hamlet</h2>
-                <h3 class="author">William Shakespeare</h3>
-            </div>
-            <div class="cardBottom">
-                <button class="status">Change Status</button>
-                <button class="delete">Delete</button>
+    <div class="buttonWrapper">
+        <button id="addBookButton">Add Book</button>
+    </div>
+    <div class="modal">
+        <div class="modalContent">
+            <span id="closeModal">&times;</span>
+            <div id="formContainer">
+                <form id="bookForm">
+                    <div>
+                        <label for="title">Book Title</label>
+                        <input type="text" name="title" id="title" required>
+                    </div>
+                    <div>
+                        <label for="author">Book Author</label>
+                        <input type="text" name="author" id="author" required>
+                    </div>
+                    <div>
+                        <label for="pages">Pages</label>
+                        <input type="number" name="pages" id="pages" required>
+                    </div>
+                    <div id="statusQuestion">
+                        <label for="status">Have you read this book?</label>
+                        <input type="checkbox" id="status">
+                    </div>
+                    <button id="submitButton" type="submit">Add Book</button>
+                </form>
             </div>
         </div>
+    </div>
+    <div id="cardContainer">
+        <template id="bookTemplate">
+            <div class="card">
+                <div class="cardTop">
+                    <div class="read">Read</div>
+                    <p class="pages">320</p>
+                </div>
+                <div class="cardMiddle">
+                    <h2 class="title">Hamlet</h2>
+                    <h3 class="author">William Shakespeare</h3>
+                </div>
+                <div class="cardBottom">
+                    <button class="status">Change Status</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+        </template>
     </div>
     <script src="script.js"></script>
 </body>
